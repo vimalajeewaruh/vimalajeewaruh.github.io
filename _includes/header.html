@@ -1,0 +1,23 @@
+<header class="site-header" data-header>
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Dixon Vimalajeewa, home">
+    <span class="brand-mark" aria-hidden="true">DV</span>
+    <span class="brand-copy">
+      <strong>Dixon Vimalajeewa</strong>
+      <small>STATISTICS · WAVELETS · AI</small>
+    </span>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+    <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
+  </button>
+
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+    <a {% if page.page_key == 'research' %}class="active"{% endif %} href="{{ '/research/' | relative_url }}">Research</a>
+    <a {% if page.page_key == 'publications' %}class="active"{% endif %} href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a {% if page.page_key == 'applications' %}class="active"{% endif %} href="{{ '/applications/' | relative_url }}">Applications</a>
+    <a {% if page.page_key == 'teaching' %}class="active"{% endif %} href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a {% if page.page_key == 'about' %}class="active"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
+    <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Connect <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+

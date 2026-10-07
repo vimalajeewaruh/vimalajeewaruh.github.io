@@ -1,0 +1,23 @@
+title: "Dixon Vimalajeewa"
+tagline: "Statistics · Wavelets · Artificial Intelligence"
+description: "Academic portfolio of Dixon Vimalajeewa: statistical signal processing, wavelets, multiscale inference, machine learning, and interdisciplinary data science."
+url: ""
+baseurl: ""
+email: "hvimalajeewa2@unl.edu"
+institution: "University of Nebraska–Lincoln"
+department: "Department of Statistics"
+markdown: kramdown
+permalink: pretty
+timezone: America/Chicago
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
